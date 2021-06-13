@@ -29,4 +29,4 @@ $json_arr = array_values($json_arr);
 file_put_contents('data.json', json_encode($json_arr));
 
 header("Location: index.php");
-?> 
+?>

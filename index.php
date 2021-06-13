@@ -25,6 +25,7 @@ $users = json_decode($data);
         <?php } ?>
     </tbody>
 </table>
+</br>
 <a href="cadastrar.php">Cadastrar</a>
 <a href="atualizar.php">Atualizar</a>
 <a href="remover.php">Remover</a>
