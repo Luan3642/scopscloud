@@ -6,13 +6,9 @@ $data = file_get_contents('data.json');
 // decode json to array
 $json_arr = json_decode($data, true);
 
-foreach ($json_arr as $key => $value) {
-    if ($value['codigo'] == $_POST["codigo"]) {
-		$json_arr[$key]['nome'] = $_POST["nome"];
-        $json_arr[$key]['sobrenome'] = $_POST["sobrenome"];
-		$json_arr[$key]['email'] = $_POST["email"];
-    }
-}
+$json_arr[] = array($_POST["codigo"], $_POST["nome"], $_POST["sobrenome"], $_POST["email"]);
+
+
 
 // encode array to json and save to file
 file_put_contents('data.json', json_encode($json_arr));
