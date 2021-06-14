@@ -1,3 +1,15 @@
+<html>
+<body>
+<h1>Deletar</h1>
+<form action="atualizar.php" method="post">
+Codigo:<input type="text" name="codigo"><br>
+
+<input type="submit" href="atualizar.php">
+</form>
+
+</body>
+</html> 
+
 <?php
 
 // read json file
@@ -10,7 +22,7 @@ $json_arr = json_decode($data, true);
 $arr_index = array();
 foreach ($json_arr as $key => $value)
 {
-    if ($value['codigo'] == '4')
+    if ($value['codigo'] ==  $_POST["codigo")
     {
         $arr_index[] = $key;
     }

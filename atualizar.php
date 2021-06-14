@@ -7,10 +7,10 @@ $data = file_get_contents('data.json');
 $json_arr = json_decode($data, true);
 
 foreach ($json_arr as $key => $value) {
-    if ($value['codigo'] == '4') {
-		$json_arr[$key]['nome'] = 'Vilmar';
-        $json_arr[$key]['sobrenome'] = 'Abreu';
-		$json_arr[$key]['email'] = 'vilmar.abreu@pucpr.br';
+    if ($value['codigo'] == $_POST["codigo"]) {
+		$json_arr[$key]['nome'] = $_POST["nome"];
+        $json_arr[$key]['sobrenome'] = $_POST["sobrenome"];
+		$json_arr[$key]['email'] = $_POST["email"];
     }
 }
 
