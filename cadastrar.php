@@ -1,7 +1,7 @@
 
 <html>
 <body>
-<h1 style="text-align: center">Cadastrar</h1>
+<h1 style="text-align: center; color: red; font-size: 30px">Cadastrar</h1>
 <form action="insert.php" method="post">
   <label style="font-weight: bold"> Codigo: </label><input type="text" name="codigo"><br>
   <label style="font-weight: bold"> Nome: </label> <input type="text" name="nome"><br>
