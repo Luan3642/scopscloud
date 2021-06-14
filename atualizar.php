@@ -1,11 +1,11 @@
 <html>
 <body>
-<h1>Atualizar</h1>
+<h1 style="text-align:center">Atualizar</h1>
 <form action="update.php" method="post">
-Codigo:<input type="text" name="codigo"><br>
-Nome: <input type="text" name="nome"><br>
-Sobrenome: <input type="text" name="sobrenome"><br>
-Email: <input type="text" name="email"><br>
+  <label style="font-weight: bold">Codigo:</label><input type="text" name="codigo"><br>
+  <label style="font-weight: bold"> Nome: </label> <input type="text" name="nome"><br>
+  <label style="font-weight: bold"> Sobrenome: </label> <input type="text" name="sobrenome"><br>
+  <label style="font-weight: bold"> Email: </label> <input type="text" name="email"><br>
 <input type="submit" href="index.php">
 </form>
 
