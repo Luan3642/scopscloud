@@ -1,17 +1,11 @@
-<?php
+<html>
+<body>
+<h1>Atualizar</h1>
+<form action="insert.php" method="post">
+Codigo:<input type="text" name="codigo"><br>
 
-// read file
-$data = file_get_contents('data.json');
+<input type="submit" href="index.php">
+</form>
 
-// decode json to array
-$json_arr = json_decode($data, true);
-
-$json_arr[] = array( echo $_POST["codigo"], $_POST["nome"], $_POST["sobrenome"], $_POST["email"]);
-
-
-
-// encode array to json and save to file
-file_put_contents('data.json', json_encode($json_arr));
-
-header("Location: index.php");
-?> 
+</body>
+</html> 

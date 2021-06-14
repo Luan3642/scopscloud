@@ -10,7 +10,7 @@ $json_arr = json_decode($data, true);
 $arr_index = array();
 foreach ($json_arr as $key => $value)
 {
-    if ($value['codigo'] == '4')
+    if ($value['codigo'] == $_POST["codigo"])
     {
         $arr_index[] = $key;
     }
