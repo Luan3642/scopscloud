@@ -7,7 +7,7 @@
   <label style="font-weight: bold"> Nome: </label> <input type="text" name="nome"><br>
   <label style="font-weight: bold"> Sobrenome: </label> <input type="text" name="sobrenome"><br>
   <label style="font-weight: bold"> Email: </label> <input type="text" name="email"><br>
-
+  <br>
 <input type="submit" href="index.php">
 </form>
 
