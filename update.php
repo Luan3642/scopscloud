@@ -10,6 +10,14 @@ $codigo = $_POST["codigo"]
 
 foreach ($json_arr as $key => $value) {
     if ($value['codigo'] == $codigo) {
+		if ($value['codigo'] == $_POST["codigo"])
+    {
+        $arr_index[] = $key;
+    }
+	foreach ($arr_index as $i)
+{
+    unset($json_arr[$i]);
+}
 		$json_arr[$key]['nome'] = $_POST["nome"];
         $json_arr[$key]['sobrenome'] = $_POST["sobrenome"];
 		$json_arr[$key]['email'] = $_POST["email"];
