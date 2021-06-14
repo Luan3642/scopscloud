@@ -6,7 +6,7 @@ $data = file_get_contents('data.json');
 // decode json to array
 $json_arr = json_decode($data, true);
 
-$json_arr[] = array($_POST["codigo"], $_POST["nome"], $_POST["sobrenome"], $_POST["email"]);
+$json_arr[] = array( echo $_POST["codigo"], $_POST["nome"], $_POST["sobrenome"], $_POST["email"]);
 
 
 
