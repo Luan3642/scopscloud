@@ -4,29 +4,16 @@ $filename = 'data.json';
 
 $data = file_get_contents($filename);
 $users = json_decode($data);
+$agora = date('d/m/Y H:i');
+echo $agora;
 ?>
 
 <html>
-<table>
-    <tbody>
-        <tr>
-			<th>Código: </th>
-            <th>Nome: </th>
-            <th>Sobrenome: </th>
-            <th>Email: </th>
-        </tr>
-        <?php foreach ($users as $user) { ?>
-        <tr>
-			<td> <?= $user->codigo; ?> </td>
-            <td> <?= $user->nome; ?> </td>
-            <td> <?= $user->sobrenome; ?> </td>
-            <td> <?= $user->email; ?> </td>
-        </tr>
-        <?php } ?>
-    </tbody>
-</table>
-</br>
-<a href="cadastrar.php">Cadastrar</a>
-<a href="atualizar.php">Atualizar</a>
-<a href="remover.php">Remover</a>
+    <body>
+       <p>
+			Avaliação Socps 2 </br>
+			Nome: Luan de Oliveira Magalhães</br>
+			
+	   </p>
+    </body>
 </html>
